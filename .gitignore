@@ -5,7 +5,7 @@ build/*
 dist/*
 
 **/*.whl
-**/*Create .env
+**/*.env
 **/*.spec
 
 bot_corpus/dialogues.txt
