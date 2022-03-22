@@ -40,7 +40,7 @@ class Bot:
             self.authorized = True
 
         # получение id пользователя из файла настроек окружения .env в виде строки USER_ID="1234567890"
-        self.default_user_id = os.getenv("USER_ID")
+        self.default_user_id = os.getnetrc("USER_ID")
 
     def do_auth(self):
         """
