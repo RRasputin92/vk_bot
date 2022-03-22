@@ -31,7 +31,7 @@ class Bot:
         Инициализация бота при помощи получения доступа к API ВКонтакте
         """
         # загрузка информации из .env-файла
-        load_dotenv()
+        load_dotnetrc()
 
         # авторизация
         self.vk_api_access = self.do_auth()
@@ -48,7 +48,7 @@ class Bot:
         Использует переменную, хранящуюся в файле настроек окружения .env в виде строки ACCESS_TOKEN="1q2w3e4r5t6y7u8i9o..."
         :return: возможность работать с API
         """
-        token = os.getenv("ACCESS_TOKEN")
+        token = os.getnetrc("ACCESS_TOKEN")
         try:
             self.vk_session = vk_api.VkApi(token=token)
             return self.vk_session.get_api()
