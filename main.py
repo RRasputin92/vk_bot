@@ -1,6 +1,6 @@
-from simple_bot import Bot
-from scheduled_bot import ScheduledBot
-from longpoll_bot import LongPollBot
+# from simple_bot import Bot
+# from scheduled_bot import ScheduledBot
+# from longpoll_bot import LongPollBot
 from nlu_longpoll_bot import NLULongPollBot
 
 if __name__ == '__main__':
