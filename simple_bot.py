@@ -4,7 +4,7 @@
 
 import vk_api  # использование VK API
 from vk_api.utils import get_random_id  # снижение количества повторных отправок сообщения
-from dotenv import load_dotenv  # загрузка информации из .env-файла
+from dotnetrc import load_dotnetrc  # загрузка информации из .env-файла
 import os  # работа с файловой системой
 
 
